@@ -1,72 +1,224 @@
-# Getting Started with Create React App
+# 🚀 Kiwi — Powered by AdSync Engine
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A next-gen smart eCommerce platform that understands user behavior and delivers personalized product ads with dynamic pricing.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧠 What is Kiwi?
 
-### `npm start`
+Kiwi is not a normal eCommerce website.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+It is a **behavior-driven intelligent shopping system** powered by our custom-built **AdSync Engine**, which tracks user interactions and shows highly relevant product offers.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ⚡ Core Idea
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> “Show the right product to the right user at the right time — with the right price.”
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔥 Key Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🧠 AdSync Engine (Core Innovation)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Tracks real-time user behavior
+* Uses a scoring system to detect interest
+* Runs on a **5-layer interaction cycle**
+* Resets after each cycle for accuracy
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🎯 Behavior Tracking System
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Tracks:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* 👁️ Product Views
+* 👆 Clicks
+* 🛒 Add to Cart
+* ❌ Remove from Cart
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Each action contributes to a **score-based engine**
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### ⚡ Smart Product Detection
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Identifies most relevant product using scoring
+* Prioritizes:
 
-### Code Splitting
+  * High interaction products
+  * User preferred categories
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+### 💸 Dynamic Pricing System
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Personalized discounts based on interest level
 
-### Making a Progressive Web App
+| Scenario                   | Discount   |
+| -------------------------- | ---------- |
+| High Interest              | up to 20%  |
+| Medium Interest            | ~10–15%    |
+| Already Discounted Product | extra 3–5% |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+✅ Always applies discount on **offerPrice if available**
+❌ Never uses original price incorrectly
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 🎁 Airdrop Offer System
 
-### Deployment
+* Selected product is sent as a **limited-time offer**
+* Duration: **1 hour**
+* Stored in user’s cart as an **airdrop**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+### 🔁 Smart Cycle Reset
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# KIWI-FRONTEND-POWERED-BY-ADSYNC
-# KIWI-FRONTEND-POWERED-BY-ADSYNC
+After an ad is generated:
+
+* Clears all activity data
+* Prevents biased recommendations
+* Starts fresh tracking cycle
+
+---
+
+### 🛡️ Secure Backend System
+
+* Built with **Node.js + Express**
+* Uses **Firebase Firestore**
+* Role-based data protection
+* Backend-driven logic (no frontend manipulation)
+
+---
+
+## 🏗️ Tech Stack
+
+### Frontend
+
+* React.js
+* CSS
+* Firebase SDK
+
+### Backend
+
+* Node.js
+* Express.js
+* Firebase Admin SDK
+
+### Database
+
+* Firebase Firestore
+
+---
+
+## ⚙️ How It Works
+
+1. User interacts with products
+2. System tracks last 5 actions
+3. Assigns scores to products
+4. Finds highest scoring product
+5. Applies dynamic pricing
+6. Sends product as a timed **airdrop**
+7. Clears activity → restarts cycle
+
+---
+
+## 📦 Project Structure
+
+```
+frontend/
+  ├── components/
+  ├── pages/
+  ├── firebase.js
+
+backend/
+  ├── index.js
+  ├── firebaseAdmin.js
+```
+
+---
+
+## 🚀 Getting Started
+
+### 🔹 Frontend
+
+```
+cd frontend
+npm install
+npm start
+```
+
+### 🔹 Backend
+
+```
+cd backend
+npm install
+node index.js
+```
+
+---
+
+## 🌐 Deployment
+
+Frontend:
+
+```
+npm run build
+serve -s build
+```
+
+Backend:
+
+* Hosted on Google Cloud / Replit
+
+---
+
+## 🧪 Demo Flow
+
+1. Open products
+2. Interact with 5 items
+3. Click **“Show Ad”**
+4. Watch:
+
+   * Smart product selection
+   * Dynamic pricing
+   * Airdrop system
+
+---
+
+## 🏆 Why This Project Stands Out
+
+* Not a basic eCommerce clone
+* Real-time behavioral intelligence
+* Personalized marketing engine
+* Dynamic pricing logic
+* Clean backend architecture
+
+---
+
+## 📈 Future Scope
+
+* AI-based recommendation enhancement
+* Real-time analytics dashboard
+* Multi-user segmentation
+* Advanced pricing algorithms
+
+---
+
+## 👨‍💻 Author
+
+**Sanket Padhyal**
+Full Stack Developer | CSE Student
+
+---
+
+## 💡 Final Thought
+
+> “This project transforms traditional eCommerce into an intelligent system that adapts to user behavior in real-time, making digital marketing more precise, efficient, and impactful.”
+
+---
+
+⭐ If you like this project, give it a star!
